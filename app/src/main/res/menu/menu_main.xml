@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <item android:id="@+id/menuphongban"
+         android:title="Quản lí phòng ban"
+         android:icon="@drawable/ic_phongban"
+       ></item>
+    <item android:id="@+id/menunhanvien"
+        android:title="Quản lí nhân viên"
+        android:icon="@drawable/ic_nhanvien"
+        ></item>
+    <item android:id="@+id/menuchucvu"
+        android:title="Quản lí chức vụ"
+        android:icon="@drawable/ic_chucvu"
+        ></item>
+    <item android:id="@+id/menulogout"
+        android:title="Thoát"
+        android:icon="@drawable/ic_logout"
+        ></item>
+</menu>

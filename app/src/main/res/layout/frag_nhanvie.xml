@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.quanlinhansu.fragment.nhanvien.NhanVienViewModel" />
+    </data>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/llRegister"
+                android:padding="10dp"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:text="Mã nv"
+                        android:textSize="@dimen/textSize_content"
+                        android:textColor="@color/colorDen"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:id="@+id/edtMaPB"
+                        android:layout_width="0dp"
+                        android:maxLines="1"
+                        android:background="@drawable/bg_edittext"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:text="Tên nv "
+                        android:textSize="@dimen/textSize_content"
+                        android:textColor="@color/colorDen"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:id="@+id/edtTenPB"
+                        android:layout_width="0dp"
+                        android:padding="5dp"
+                        android:maxLines="1"
+                        android:background="@drawable/bg_edittext"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btnThem"
+                    android:text="Thêm nhân viên"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorTrang"
+                    android:background="@color/colorCam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvNhanVien"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layoutAnimation="@anim/layoutanimation"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llRegister"
+                 />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

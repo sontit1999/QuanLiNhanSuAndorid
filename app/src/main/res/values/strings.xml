@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">QuanLiNhanSu</string>
+    <string-array name="trinhdo_array">
+        <item>Intern</item>
+        <item>Fresher</item>
+        <item>Junior</item>
+        <item>Mid</item>
+        <item>Senior</item>
+        <item>Project manager</item>
+        <item>Leader</item>
+    </string-array>
+</resources>
