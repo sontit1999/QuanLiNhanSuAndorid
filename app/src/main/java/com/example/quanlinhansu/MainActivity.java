@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.quanlinhansu.base.BaseActivity;
@@ -36,6 +38,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding,MainViewModel
 
     @Override
     public void setBindingViewmodel() {
+         Intent intent = getIntent();
           binding.setViewmodel(viewmodel);
           binding.navigationview.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
               @Override
